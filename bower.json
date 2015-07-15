@@ -1,0 +1,13 @@
+{
+  "name": "wedding",
+  "version": "1.0.0",
+  "dependencies": {
+    "inuit.css": "~5.0.0",
+    "bourbon": "~3.1.8",
+    "angular": "~1.0.8",
+    "jquery": "2.0.3",
+    "modernizr": "~2.6.2",
+    "requirejs": "2.1.10"
+  },
+  "devDependencies": {}
+}
