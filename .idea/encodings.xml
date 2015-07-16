@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$/Gruntfile.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/assets/scripts/jsx/app.jsx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/assets/scripts/jsx/container.jsx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_form.jsx" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/assets/scripts/jsx/window.jsx" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/views/index.handlebars" charset="UTF-8" />

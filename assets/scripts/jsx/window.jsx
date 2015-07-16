@@ -8,7 +8,9 @@ var React = require('react'),
     MenuItem = require("material-ui/lib/menus/menu-item"),
     ListItem = mui.ListItem,
     ContentInbox = require('material-ui/lib/svg-icons/content/inbox'),
-    ReactTransitionGroup = React.addons.TransitionGroup;
+    ReactTransitionGroup = React.addons.TransitionGroup,
+    FinForm = require("./finance/fin_form.jsx"),
+    Container = require("./Container.jsx");
 
 var Demo = React.createClass({
 
@@ -36,15 +38,12 @@ var Demo = React.createClass({
               height: this.props.height,
               overflow: 'hidden'
           }};
-    return (<div>
+    return (
         <ReactTransitionGroup>
-                <Menu>
-                    <MenuItem  primaryText="Inbox" leftIcon={<ContentInbox style={{padding: 0, margiLeft:12, marginTop:12}} />} />
-                    <MenuItem  primaryText="Starred" leftIcon={<ContentInbox />} />
-                </Menu>
+            <Container>
+            <FinForm />
+            </Container>
         </ReactTransitionGroup>
-        <Avatar icon={<ContentInbox />} />
-        </div>
     );
   }
 

@@ -16,8 +16,9 @@ module.exports = function (grunt) {
             transform:  [ require('grunt-react').browserify ]
           },
           app:          {
-            src:        ['assets/scripts/jsx/window.jsx', 'assets/scripts/jsx/app.jsx'],
-            dest:       'assets/scripts/js/demo.js'
+            src:        ['assets/scripts/jsx/window.jsx', 'assets/scripts/jsx/app.jsx', 'assets/script/jsx/finance/fin_form.jsx',
+                        'assets/script/jsx/container.jsx'],
+            dest:       'assets/scripts/js/familykit.js'
           }
         },
 
