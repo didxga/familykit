@@ -6,7 +6,8 @@
 var express = require('express');
 var app = express();
 var port = 3000;
-
+var bodyParser = require('body-parser');
+var money = require("./routes/money");
 /*
  * Use Handlebars for templating
  */
@@ -15,7 +16,10 @@ var hbs;
 
 // For gzip compression
 app.use(express.compress());
-
+app.use(bodyParser.urlencoded({ extended: false }));
+// parse application/json
+app.use(bodyParser.json());
+app.use(app.router);
 /*
  * Config for Production and Development
  */
@@ -60,7 +64,7 @@ app.set('view engine', 'handlebars');
 app.get('/', function(request, response, next) {
     response.render('index');
 });
-
+app.use("/money/addtrans/", money.addtrans);
 /*
  * Start it up
  */

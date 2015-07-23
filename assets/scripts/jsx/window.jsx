@@ -10,10 +10,16 @@ var React = require('react'),
     ContentInbox = require('material-ui/lib/svg-icons/content/inbox'),
     ReactTransitionGroup = React.addons.TransitionGroup,
     FinForm = require("./finance/fin_form.jsx"),
-    Container = require("./Container.jsx");
+    Container = require("./Container.jsx"),
+    Nav = require("./Nav.jsx"),
+    View = require('react-flexbox');
 
-var Demo = React.createClass({
+var windowLayout = React.createClass({
 
+    getInitialState: function() {
+        // a resizable sidebar could be implemented by updating this value
+        return {sidebarWidth: 230}
+    },
   childContextTypes: {
     muiTheme: React.PropTypes.object
   },
@@ -25,29 +31,20 @@ var Demo = React.createClass({
   },
 
   render: function() {
-      let styles = {
-          root: {
-              float: 'left',
-              marginBottom: 24,
-              marginRight: 24,
-              width: 360
-
-          },container: {
-              border: 'solid 1px #d9d9d9',
-              borderBottom: 'none',
-              height: this.props.height,
-              overflow: 'hidden'
-          }};
+          var scrollable = {
+              'overflow-y': 'hidden',
+              'overflow-x': 'hidden',
+          };
     return (
-        <ReactTransitionGroup>
-            <Container>
-            <FinForm />
-            </Container>
-        </ReactTransitionGroup>
+                <View column auto>
+                    <Nav/>
+                    <ReactTransitionGroup>
+                        <Container/>
+                    </ReactTransitionGroup>
+                </View>
     );
   }
-
 });
 
-module.exports = Demo;
+module.exports = windowLayout;
 

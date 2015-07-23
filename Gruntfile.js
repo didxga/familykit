@@ -22,16 +22,6 @@ module.exports = function (grunt) {
           }
         },
 
-        // react: {
-        //     combined_file_output: {
-        //       files: {
-        //         'assets/scripts/js/demo.js': [
-        //           'assets/scripts/jsx/window.jsx'
-        //         ]
-        //       }
-        //     }
-        //   },
-
         // Watch Config
         watch: {
             files: ['views/**/*'],
@@ -122,6 +112,8 @@ module.exports = function (grunt) {
         express: {
             options: {
               // Override defaults here
+                debug: true,
+                serverreload: false
             },
             dev: {
                 options: {
@@ -278,6 +270,12 @@ module.exports = function (grunt) {
             ]
         },
     });
+
+    grunt.registerTask('react', 'Start working on this project.', [
+        'browserify',
+        'sass:dev',
+        'watch'
+    ]);
 
     // Register Tasks
     // Workon

@@ -4,7 +4,7 @@ var React = require("react"),
     SelectField = mui.SelectField,
     TextField = mui.TextField,
     RaisedButton = mui.RaisedButton,
-    Formsy = require('formsy-react');
+    FinActions = require('./fin_action.js');
 
 var FinForm = React.createClass(
     {
@@ -13,20 +13,33 @@ var FinForm = React.createClass(
                 selectValue: undefined,
             };
         },
-        _handleSubmit: function(model) {
-          alert(model.type);
+        _handleSubmit: function(event) {
+            event.preventDefault();
+            var moneyTransaction = {
+                type:this.state.selectValue,
+                amount:this.refs.amount.getValue(),
+                remark:this.refs.remark.getValue()
+            };
+            FinActions.transferMoney(moneyTransaction);
+        },
+        _handleSelectValueChange: function(e){
+            this.setState({
+                selectValue: e.target.value
+            });
         },
         render: function() {
             let menuItems = [
-                { payload: '1', text: 'Deposit' },
-                { payload: '2', text: 'Withdraw' },
+                { bit: '1', text: 'Deposit' },
+                { bit: '2', text: 'Withdraw' },
             ]
             return (
                 <div>
-                    <Formsy.Form onValidSubmit={this._handleSubmit}>
+                    <form onSubmit={this._handleSubmit}>
                     <SelectField
                         name="type"
+                        ref="type"
                     value={this.state.selectValue}
+                        onChange={this._handleSelectValueChange}
                     floatingLabelText="Type"
                     hintText="type"
                     menuItems={menuItems}/>
@@ -34,15 +47,15 @@ var FinForm = React.createClass(
                     <TextField
                         name="amount"
                         hintText="how much money"
-                        floatingLabelText="Amount" required/>
+                        floatingLabelText="Amount" ref="amount"/>
                     <br />
                     <TextField
                         name="remark"
                         hintText="remark"
-                        multiLine={true} required/>
+                        multiLine={true} ref="remark"/>
                     <br />
                     <RaisedButton type="submit" label="Save" />
-                    </Formsy.Form>
+                    </form>
                 </div>
             );
         }
