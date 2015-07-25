@@ -9,10 +9,10 @@ var React = require('react'),
     ListItem = mui.ListItem,
     ContentInbox = require('material-ui/lib/svg-icons/content/inbox'),
     ReactTransitionGroup = React.addons.TransitionGroup,
-    FinForm = require("./finance/fin_form.jsx"),
-    Container = require("./Container.jsx"),
     Nav = require("./Nav.jsx"),
-    View = require('react-flexbox');
+    View = require('react-flexbox'),
+    Router = require('react-router'),
+    RouteHandler = Router.RouteHandler;
 
 var windowLayout = React.createClass({
 
@@ -36,12 +36,12 @@ var windowLayout = React.createClass({
               'overflow-x': 'hidden',
           };
     return (
-                <View column auto>
-                    <Nav/>
-                    <ReactTransitionGroup>
-                        <Container/>
-                    </ReactTransitionGroup>
+               <div>
+                <Nav/>
+                <View row auto style={{"margin-left":270}}>
+                    <RouteHandler />
                 </View>
+               </div>
     );
   }
 });

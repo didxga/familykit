@@ -33,7 +33,6 @@ var FinForm = React.createClass(
                 { bit: '2', text: 'Withdraw' },
             ]
             return (
-                <div>
                     <form onSubmit={this._handleSubmit}>
                     <SelectField
                         name="type"
@@ -51,12 +50,11 @@ var FinForm = React.createClass(
                     <br />
                     <TextField
                         name="remark"
-                        hintText="remark"
+                        floatingLabelText="remark"
                         multiLine={true} ref="remark"/>
                     <br />
                     <RaisedButton type="submit" label="Save" />
                     </form>
-                </div>
             );
         }
     }
