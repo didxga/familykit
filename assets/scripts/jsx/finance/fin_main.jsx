@@ -13,48 +13,50 @@ var FinMain = React.createClass(
     {
         getInitialState() {
             return {
-                //selectValue: undefined,
+                    fixedHeader: true,
+                    fixedFooter: true,
+                    stripedRows: true,
+                    showRowHover: true,
+                    selectable: true,
+                    multiSelectable: false,
+                    canSelectAll: true,
+                    deselectOnClickaway: true,
+                    height: '300px',
+                    rowData: [
+                        {type: {content: 'Deposit'}, amount: {content: 'Elizabeth Stevenson'}, remark: {content: 'Employed'}},
+                        {type: {content: 'Deposit'}, amount: {content: 'Zachary Dobb'}, remark: {content: 'Employed'}},
+                        {type: {content: 'Deposit'}, amount: {content: 'Zachary Dobb'}, remark: {content: 'Employed'}}
+                    ]
             };
         },
         _onRowSelection: function() {
 
         },
         render: function() {
-            let rowData = [
-                {selected: true, id: {content: '1'}, name: {content: 'John Smith'}, status: {content: 'Employed'}},
-                {id: {content: '2'}, name: {content: 'Randal White'}, status: {content: 'Unemployed'}},
-                {selected: true, id: {content: '3'}, name: {content: 'Stephanie Sanders'}, status: {content: 'Employed'}},
-                {id: {content: '4'}, name: {content: 'Steve Brown'}, status: {content: 'Employed'}},
-                {id: {content: '5'}, name: {content: 'Joyce Whitten'}, status: {content: 'Employed'}},
-                {id: {content: '6'}, name: {content: 'Samuel Roberts'}, status: {content: 'Unemployed'}},
-                {id: {content: '7'}, name: {content: 'Adam Moore'}, status: {content: 'Employed'}},
-                {id: {content: '8'}, name: {content: 'Robert Brown'}, status: {content: 'Employed'}},
-                {id: {content: '9'}, name: {content: 'Elizabeth Stevenson'}, status: {content: 'Employed'}},
-                {id: {content: '10'}, name: {content: 'Zachary Dobb'}, status: {content: 'Employed'}},
-                {id: {content: '11'}, name: {content: 'Zachary Dobb'}, status: {content: 'Employed'}}
-            ];
             let headerCols = {
-                id: {
-                    content: 'ID',
-                    tooltip: 'The ID'
+                type: {
+                    content: 'Type',
+                    tooltip: 'The Type'
                 },
-                name: {
-                    content: 'Name',
-                    tooltip: 'The name'
+                amount: {
+                    content: 'Amount',
+                    tooltip: 'The amount'
                 },
-                status: {
-                    content: 'Status',
-                    tooltip: 'The status'
+                remark: {
+                    content: 'Remark',
+                    tooltip: 'The Remark'
                 }
             };
-            let colOrder = ['id', 'name', 'status'];
+            let colOrder = ['type', 'amount', 'remark'];
 // Footer column content can also be specified as [ 'ID', 'Name', 'Status'].
-            let footerCols = {id: {content: 'ID'}, name: {content: 'Name'}, status: {content: 'Status'}};
+            let footerCols = {type: {content: 'Type'}, amount: {content: 'Amount'}, remark: {content: 'Remark'}};
 
             return (
                 <div>
-                    <View row auto>
+                    <View column auto>
+                        <div>
                         <FinForm />
+                        </div>
                         <div>
                             <Table
                                 headerColumns={headerCols}

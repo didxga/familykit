@@ -4,7 +4,9 @@ var React = require("react"),
     SelectField = mui.SelectField,
     TextField = mui.TextField,
     RaisedButton = mui.RaisedButton,
-    FinActions = require('./fin_action.js');
+    DatePicker = mui.DatePicker,
+    FinActions = require('./fin_action.js'),
+    View = require('react-flexbox');
 
 var FinForm = React.createClass(
     {
@@ -12,6 +14,22 @@ var FinForm = React.createClass(
             return {
                 selectValue: undefined,
             };
+        },
+        getStyles() {
+            let styles = {
+                textfield: {
+                    //float: 'left',
+                    //marginRight: 5
+                },
+                selectfield: {
+                    //float:'left',
+                    //marginRight: 5
+                },
+                datafield: {
+                    marginTop: 24
+                }
+            };
+            return styles;
         },
         _handleSubmit: function(event) {
             event.preventDefault();
@@ -31,29 +49,41 @@ var FinForm = React.createClass(
             let menuItems = [
                 { bit: '1', text: 'Deposit' },
                 { bit: '2', text: 'Withdraw' },
-            ]
+            ];
+            let style = this.getStyles();
             return (
                     <form onSubmit={this._handleSubmit}>
+                    <View column style={{"margin-bottom":"10px"}}>
+                    <View row style={{"justify-content": "flex-start"}}>
                     <SelectField
-                        name="type"
-                        ref="type"
-                    value={this.state.selectValue}
-                        onChange={this._handleSelectValueChange}
-                    floatingLabelText="Type"
-                    hintText="type"
-                    menuItems={menuItems}/>
-                    <br />
+                            name="type"
+                            ref="type"
+                            value={this.state.selectValue}
+                            onChange={this._handleSelectValueChange}
+                            floatingLabelText="Type"
+                            hintText="type"
+                            menuItems={menuItems}/>
                     <TextField
                         name="amount"
                         hintText="how much money"
-                        floatingLabelText="Amount" ref="amount"/>
-                    <br />
+                        floatingLabelText="Amount" ref="amount"
+                        style={{"margin-left": "15px"}}/>
+                    </View>
+                    <View row style={{"justify-content": "flex-start"}}>
                     <TextField
                         name="remark"
                         floatingLabelText="remark"
-                        multiLine={true} ref="remark"/>
-                    <br />
+                        multiLine={true} ref="remark"
+                        />
+                    <DatePicker
+                        hintText="date"
+                        mode="landscape"
+                        style={{"margin-left":"15px", "margin-top":"23px"}}/>
+                    </View>
+                    <div>
                     <RaisedButton type="submit" label="Save" />
+                    </div>
+                    </View>
                     </form>
             );
         }

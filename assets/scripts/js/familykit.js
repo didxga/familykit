@@ -108,7 +108,9 @@ var React = require("react"),
     SelectField = mui.SelectField,
     TextField = mui.TextField,
     RaisedButton = mui.RaisedButton,
-    FinActions = require('./fin_action.js');
+    DatePicker = mui.DatePicker,
+    FinActions = require('./fin_action.js'),
+    View = require('react-flexbox');
 
 var FinForm = React.createClass(
     {displayName: "FinForm",
@@ -116,6 +118,22 @@ var FinForm = React.createClass(
             return {
                 selectValue: undefined,
             };
+        },
+        getStyles() {
+            let styles = {
+                textfield: {
+                    //float: 'left',
+                    //marginRight: 5
+                },
+                selectfield: {
+                    //float:'left',
+                    //marginRight: 5
+                },
+                datafield: {
+                    marginTop: 24
+                }
+            };
+            return styles;
         },
         _handleSubmit: function(event) {
             event.preventDefault();
@@ -135,29 +153,41 @@ var FinForm = React.createClass(
             let menuItems = [
                 { bit: '1', text: 'Deposit' },
                 { bit: '2', text: 'Withdraw' },
-            ]
+            ];
+            let style = this.getStyles();
             return (
                     React.createElement("form", {onSubmit: this._handleSubmit}, 
+                    React.createElement(View, {column: true, style: {"margin-bottom":"10px"}}, 
+                    React.createElement(View, {row: true, style: {"justify-content": "flex-start"}}, 
                     React.createElement(SelectField, {
-                        name: "type", 
-                        ref: "type", 
-                    value: this.state.selectValue, 
-                        onChange: this._handleSelectValueChange, 
-                    floatingLabelText: "Type", 
-                    hintText: "type", 
-                    menuItems: menuItems}), 
-                    React.createElement("br", null), 
+                            name: "type", 
+                            ref: "type", 
+                            value: this.state.selectValue, 
+                            onChange: this._handleSelectValueChange, 
+                            floatingLabelText: "Type", 
+                            hintText: "type", 
+                            menuItems: menuItems}), 
                     React.createElement(TextField, {
                         name: "amount", 
                         hintText: "how much money", 
-                        floatingLabelText: "Amount", ref: "amount"}), 
-                    React.createElement("br", null), 
+                        floatingLabelText: "Amount", ref: "amount", 
+                        style: {"margin-left": "15px"}})
+                    ), 
+                    React.createElement(View, {row: true, style: {"justify-content": "flex-start"}}, 
                     React.createElement(TextField, {
                         name: "remark", 
                         floatingLabelText: "remark", 
-                        multiLine: true, ref: "remark"}), 
-                    React.createElement("br", null), 
+                        multiLine: true, ref: "remark"}
+                        ), 
+                    React.createElement(DatePicker, {
+                        hintText: "date", 
+                        mode: "landscape", 
+                        style: {"margin-left":"15px", "margin-top":"23px"}})
+                    ), 
+                    React.createElement("div", null, 
                     React.createElement(RaisedButton, {type: "submit", label: "Save"})
+                    )
+                    )
                     )
             );
         }
@@ -166,7 +196,7 @@ var FinForm = React.createClass(
 
 module.exports = FinForm;
 
-},{"./fin_action.js":4,"material-ui":42,"react":358}],6:[function(require,module,exports){
+},{"./fin_action.js":4,"material-ui":42,"react":358,"react-flexbox":142}],6:[function(require,module,exports){
 "use strict"
 var React = require("react"),
     mui = require("material-ui"),
@@ -182,48 +212,50 @@ var FinMain = React.createClass(
     {displayName: "FinMain",
         getInitialState() {
             return {
-                //selectValue: undefined,
+                    fixedHeader: true,
+                    fixedFooter: true,
+                    stripedRows: true,
+                    showRowHover: true,
+                    selectable: true,
+                    multiSelectable: false,
+                    canSelectAll: true,
+                    deselectOnClickaway: true,
+                    height: '300px',
+                    rowData: [
+                        {type: {content: 'Deposit'}, amount: {content: 'Elizabeth Stevenson'}, remark: {content: 'Employed'}},
+                        {type: {content: 'Deposit'}, amount: {content: 'Zachary Dobb'}, remark: {content: 'Employed'}},
+                        {type: {content: 'Deposit'}, amount: {content: 'Zachary Dobb'}, remark: {content: 'Employed'}}
+                    ]
             };
         },
         _onRowSelection: function() {
 
         },
         render: function() {
-            let rowData = [
-                {selected: true, id: {content: '1'}, name: {content: 'John Smith'}, status: {content: 'Employed'}},
-                {id: {content: '2'}, name: {content: 'Randal White'}, status: {content: 'Unemployed'}},
-                {selected: true, id: {content: '3'}, name: {content: 'Stephanie Sanders'}, status: {content: 'Employed'}},
-                {id: {content: '4'}, name: {content: 'Steve Brown'}, status: {content: 'Employed'}},
-                {id: {content: '5'}, name: {content: 'Joyce Whitten'}, status: {content: 'Employed'}},
-                {id: {content: '6'}, name: {content: 'Samuel Roberts'}, status: {content: 'Unemployed'}},
-                {id: {content: '7'}, name: {content: 'Adam Moore'}, status: {content: 'Employed'}},
-                {id: {content: '8'}, name: {content: 'Robert Brown'}, status: {content: 'Employed'}},
-                {id: {content: '9'}, name: {content: 'Elizabeth Stevenson'}, status: {content: 'Employed'}},
-                {id: {content: '10'}, name: {content: 'Zachary Dobb'}, status: {content: 'Employed'}},
-                {id: {content: '11'}, name: {content: 'Zachary Dobb'}, status: {content: 'Employed'}}
-            ];
             let headerCols = {
-                id: {
-                    content: 'ID',
-                    tooltip: 'The ID'
+                type: {
+                    content: 'Type',
+                    tooltip: 'The Type'
                 },
-                name: {
-                    content: 'Name',
-                    tooltip: 'The name'
+                amount: {
+                    content: 'Amount',
+                    tooltip: 'The amount'
                 },
-                status: {
-                    content: 'Status',
-                    tooltip: 'The status'
+                remark: {
+                    content: 'Remark',
+                    tooltip: 'The Remark'
                 }
             };
-            let colOrder = ['id', 'name', 'status'];
+            let colOrder = ['type', 'amount', 'remark'];
 // Footer column content can also be specified as [ 'ID', 'Name', 'Status'].
-            let footerCols = {id: {content: 'ID'}, name: {content: 'Name'}, status: {content: 'Status'}};
+            let footerCols = {type: {content: 'Type'}, amount: {content: 'Amount'}, remark: {content: 'Remark'}};
 
             return (
                 React.createElement("div", null, 
-                    React.createElement(View, {row: true, auto: true}, 
-                        React.createElement(FinForm, null), 
+                    React.createElement(View, {column: true, auto: true}, 
+                        React.createElement("div", null, 
+                        React.createElement(FinForm, null)
+                        ), 
                         React.createElement("div", null, 
                             React.createElement(Table, {
                                 headerColumns: headerCols, 

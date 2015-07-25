@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cd2e335-d189-4268-a686-40efe2f1562b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/scripts/jsx/app-router.jsx" />
-      <change type="DELETED" beforePath="D:\nugget\local\familykit\assets\scripts\js\demo.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\nugget\local\familykit\assets\scripts\jsx\container.jsx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/jsx/app.jsx" afterPath="$PROJECT_DIR$/assets/scripts/jsx/app.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/js/familykit.js" afterPath="$PROJECT_DIR$/assets/scripts/js/familykit.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_form.jsx" afterPath="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_form.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_main.jsx" afterPath="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_main.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/jsx/nav.jsx" afterPath="$PROJECT_DIR$/assets/scripts/jsx/nav.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/jsx/window.jsx" afterPath="$PROJECT_DIR$/assets/scripts/jsx/window.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nodejs_project.iws" />
@@ -39,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/window.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="35" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="35" />
+              <caret line="40" column="21" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -69,11 +60,11 @@
         <entry file="file://$PROJECT_DIR$/assets/scripts/js/familykit.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding>
-                <marker date="1437816449550" expanded="true" signature="443:514" placeholder="{...}" />
-                <marker date="1437816449550" expanded="true" signature="446:514" placeholder="[...]" />
-                <marker date="1437816449550" expanded="true" signature="479:514" placeholder="{...}" />
+                <marker date="1437830158347" expanded="true" signature="443:514" placeholder="{...}" />
+                <marker date="1437830158347" expanded="true" signature="446:514" placeholder="[...]" />
+                <marker date="1437830158347" expanded="true" signature="479:514" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -99,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fin_form.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fin_form.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_form.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.52020204">
+              <caret line="78" column="38" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -119,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fin_main.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fin_main.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_main.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.3713355">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -133,7 +124,7 @@
         <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/app.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -171,9 +162,9 @@
         <option value="$PROJECT_DIR$/assets/scripts/jsx/app.jsx" />
         <option value="$PROJECT_DIR$/assets/scripts/jsx/nav.jsx" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_form.jsx" />
         <option value="$PROJECT_DIR$/assets/scripts/jsx/app-router.jsx" />
         <option value="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_main.jsx" />
+        <option value="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_form.jsx" />
       </list>
     </option>
   </component>
@@ -438,7 +429,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31208053" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43791947" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2885906" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39739415" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -787,11 +778,11 @@
     <entry file="file://$PROJECT_DIR$/assets/scripts/js/familykit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding>
-            <marker date="1437816449550" expanded="true" signature="443:514" placeholder="{...}" />
-            <marker date="1437816449550" expanded="true" signature="446:514" placeholder="[...]" />
-            <marker date="1437816449550" expanded="true" signature="479:514" placeholder="{...}" />
+            <marker date="1437830158347" expanded="true" signature="443:514" placeholder="{...}" />
+            <marker date="1437830158347" expanded="true" signature="446:514" placeholder="[...]" />
+            <marker date="1437830158347" expanded="true" signature="479:514" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -823,7 +814,7 @@
     <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/app.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -831,23 +822,23 @@
     <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/window.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_form.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_main.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3713355">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_form.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52020204">
+          <caret line="78" column="38" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
           <folding />
         </state>
       </provider>
