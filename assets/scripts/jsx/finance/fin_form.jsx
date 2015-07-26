@@ -27,6 +27,9 @@ var FinForm = React.createClass(
                 },
                 datafield: {
                     marginTop: 24
+                },
+                form: {
+                    display: 'none'
                 }
             };
             return styles;
@@ -52,7 +55,7 @@ var FinForm = React.createClass(
             ];
             let style = this.getStyles();
             return (
-                    <form onSubmit={this._handleSubmit}>
+                    <form onSubmit={this._handleSubmit} style={style.form}>
                     <View column style={{"margin-bottom":"10px"}}>
                     <View row style={{"justify-content": "flex-start"}}>
                     <SelectField

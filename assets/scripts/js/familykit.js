@@ -131,6 +131,9 @@ var FinForm = React.createClass(
                 },
                 datafield: {
                     marginTop: 24
+                },
+                form: {
+                    display: 'none'
                 }
             };
             return styles;
@@ -156,7 +159,7 @@ var FinForm = React.createClass(
             ];
             let style = this.getStyles();
             return (
-                    React.createElement("form", {onSubmit: this._handleSubmit}, 
+                    React.createElement("form", {onSubmit: this._handleSubmit, style: style.form}, 
                     React.createElement(View, {column: true, style: {"margin-bottom":"10px"}}, 
                     React.createElement(View, {row: true, style: {"justify-content": "flex-start"}}, 
                     React.createElement(SelectField, {
