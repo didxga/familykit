@@ -29,7 +29,7 @@ var FinForm = React.createClass(
                     marginTop: 24
                 },
                 form: {
-                    display: 'none'
+                    //display: 'none'
                 }
             };
             return styles;
@@ -83,9 +83,6 @@ var FinForm = React.createClass(
                         mode="landscape"
                         style={{"margin-left":"15px", "margin-top":"23px"}}/>
                     </View>
-                    <div>
-                    <RaisedButton type="submit" label="Save" />
-                    </div>
                     </View>
                     </form>
             );

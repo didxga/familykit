@@ -133,7 +133,7 @@ var FinForm = React.createClass(
                     marginTop: 24
                 },
                 form: {
-                    display: 'none'
+                    //display: 'none'
                 }
             };
             return styles;
@@ -186,9 +186,6 @@ var FinForm = React.createClass(
                         hintText: "date", 
                         mode: "landscape", 
                         style: {"margin-left":"15px", "margin-top":"23px"}})
-                    ), 
-                    React.createElement("div", null, 
-                    React.createElement(RaisedButton, {type: "submit", label: "Save"})
                     )
                     )
                     )
@@ -209,7 +206,10 @@ var React = require("react"),
     FinActions = require('./fin_action.js'),
     FinForm = require("./fin_form.jsx"),
     View = require('react-flexbox'),
-    Table = mui.Table;
+    Table = mui.Table,
+    AppBar = mui.AppBar,
+    FlatButton = mui.FlatButton,
+    Dialog = mui.Dialog;
 
 var FinMain = React.createClass(
     {displayName: "FinMain",
@@ -234,6 +234,12 @@ var FinMain = React.createClass(
         _onRowSelection: function() {
 
         },
+        _onAppBarButtonTouch: function() {
+            alert("tap")
+        },
+        _onAppBarRightButtonTouch: function() {
+            this.refs.addFinDialog.show();
+        },
         render: function() {
             let headerCols = {
                 type: {
@@ -252,12 +258,27 @@ var FinMain = React.createClass(
             let colOrder = ['type', 'amount', 'remark'];
 // Footer column content can also be specified as [ 'ID', 'Name', 'Status'].
             let footerCols = {type: {content: 'Type'}, amount: {content: 'Amount'}, remark: {content: 'Remark'}};
-
+            let customActions = [
+                React.createElement(FlatButton, {
+                    key: 1, 
+                    label: "Cancel", 
+                    secondary: true}
+                    ),
+                React.createElement(FlatButton, {
+                    key: 2, 
+                    label: "Submit", 
+                    primary: true}
+                     )
+            ];
             return (
                 React.createElement("div", null, 
                     React.createElement(View, {column: true, auto: true}, 
                         React.createElement("div", null, 
-                        React.createElement(FinForm, null)
+                            React.createElement(AppBar, {
+                                title: "Finance", 
+                                onLeftIconButtonTouchTap: this._onAppBarButtonTouch, 
+                                iconElementRight: React.createElement(FlatButton, {label: "Add", onClick: this._onAppBarRightButtonTouch})}
+                            )
                         ), 
                         React.createElement("div", null, 
                             React.createElement(Table, {
@@ -276,6 +297,13 @@ var FinMain = React.createClass(
                                 deselectOnClickaway: this.state.deselectOnClickaway, 
                                 onRowSelection: this._onRowSelection})
                         )
+                    ), 
+                    React.createElement(Dialog, {
+                        ref: "addFinDialog", 
+                        title: "Add new", 
+                        actions: customActions, 
+                        modal: this.state.modal}, 
+                        React.createElement(FinForm, null), "."
                     )
                 )
             );

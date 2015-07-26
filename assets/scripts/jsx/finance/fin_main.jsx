@@ -7,7 +7,10 @@ var React = require("react"),
     FinActions = require('./fin_action.js'),
     FinForm = require("./fin_form.jsx"),
     View = require('react-flexbox'),
-    Table = mui.Table;
+    Table = mui.Table,
+    AppBar = mui.AppBar,
+    FlatButton = mui.FlatButton,
+    Dialog = mui.Dialog;
 
 var FinMain = React.createClass(
     {
@@ -32,6 +35,12 @@ var FinMain = React.createClass(
         _onRowSelection: function() {
 
         },
+        _onAppBarButtonTouch: function() {
+            alert("tap")
+        },
+        _onAppBarRightButtonTouch: function() {
+            this.refs.addFinDialog.show();
+        },
         render: function() {
             let headerCols = {
                 type: {
@@ -50,12 +59,27 @@ var FinMain = React.createClass(
             let colOrder = ['type', 'amount', 'remark'];
 // Footer column content can also be specified as [ 'ID', 'Name', 'Status'].
             let footerCols = {type: {content: 'Type'}, amount: {content: 'Amount'}, remark: {content: 'Remark'}};
-
+            let customActions = [
+                <FlatButton
+                    key={1}
+                    label="Cancel"
+                    secondary={true}
+                    />,
+                <FlatButton
+                    key={2}
+                    label="Submit"
+                    primary={true}
+                     />
+            ];
             return (
                 <div>
                     <View column auto>
                         <div>
-                        <FinForm />
+                            <AppBar
+                                title="Finance"
+                                onLeftIconButtonTouchTap={this._onAppBarButtonTouch}
+                                iconElementRight={<FlatButton label="Add" onClick={this._onAppBarRightButtonTouch}/>} >
+                            </AppBar>
                         </div>
                         <div>
                             <Table
@@ -75,6 +99,13 @@ var FinMain = React.createClass(
                                 onRowSelection={this._onRowSelection} />
                         </div>
                     </View>
+                    <Dialog
+                        ref="addFinDialog"
+                        title="Add new"
+                        actions={customActions}
+                        modal={this.state.modal}>
+                        <FinForm />.
+                    </Dialog>
                 </div>
             );
         }
