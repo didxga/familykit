@@ -78,6 +78,7 @@ var FinAction = Reflux.createActions([
     "load",             //called when entering the page
     "completeTodo",     //called when ticking checkbox
     "transferMoney",
+    "getTransfer",
     "removeTodo",       //called when click the Trash icon
     "completeAll",      //called when clicking link in footer
     "resortList"        //called when dropping a list item
@@ -85,6 +86,12 @@ var FinAction = Reflux.createActions([
 
 FinAction.transferMoney.preEmit = function (moneytransaction) {
     request.post('/money/addtrans/', {moneytransaction: moneytransaction}, function () {});
+};
+
+FinAction.getTransfer.preEmit = function() {
+    request.get("/money/gettrans/", function(response){
+        console.log(response);
+    });
 };
 
 FinAction.removeTodo.preEmit = function (id) {
@@ -139,7 +146,6 @@ var FinForm = React.createClass(
             return styles;
         },
         _handleSubmit: function(event) {
-            event.preventDefault();
             var moneyTransaction = {
                 type:this.state.selectValue,
                 amount:this.refs.amount.getValue(),
@@ -209,6 +215,7 @@ var React = require("react"),
     Table = mui.Table,
     AppBar = mui.AppBar,
     FlatButton = mui.FlatButton,
+    FinActions = require('./fin_action.js'),
     Dialog = mui.Dialog;
 
 var FinMain = React.createClass(
@@ -224,15 +231,22 @@ var FinMain = React.createClass(
                     canSelectAll: true,
                     deselectOnClickaway: true,
                     height: '300px',
-                    rowData: [
-                        {type: {content: 'Deposit'}, amount: {content: 'Elizabeth Stevenson'}, remark: {content: 'Employed'}},
-                        {type: {content: 'Deposit'}, amount: {content: 'Zachary Dobb'}, remark: {content: 'Employed'}},
-                        {type: {content: 'Deposit'}, amount: {content: 'Zachary Dobb'}, remark: {content: 'Employed'}}
-                    ]
+                    rowData:this._initFinForm()
             };
+        },
+        _initFinForm: function() {
+            FinActions.getTransfer();
+            return [
+                {type: {content: 'Deposit'}, amount: {content: 'Elizabeth Stevenson'}, remark: {content: 'Employed'}},
+                {type: {content: 'Deposit'}, amount: {content: 'Zachary Dobb'}, remark: {content: 'Employed'}},
+                {type: {content: 'Deposit'}, amount: {content: 'Zachary Dobb'}, remark: {content: 'Employed'}}
+            ];
         },
         _onRowSelection: function() {
 
+        },
+        _onAddTran: function() {
+            this.refs.transform._handleSubmit();
         },
         _onAppBarButtonTouch: function() {
             alert("tap")
@@ -267,6 +281,7 @@ var FinMain = React.createClass(
                 React.createElement(FlatButton, {
                     key: 2, 
                     label: "Submit", 
+                    onClick: this._onAddTran, 
                     primary: true}
                      )
             ];
@@ -303,7 +318,7 @@ var FinMain = React.createClass(
                         title: "Add new", 
                         actions: customActions, 
                         modal: this.state.modal}, 
-                        React.createElement(FinForm, null), "."
+                        React.createElement(FinForm, {ref: "transform"}), "."
                     )
                 )
             );

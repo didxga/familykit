@@ -65,6 +65,7 @@ app.get('/', function(request, response, next) {
     response.render('index');
 });
 app.use("/money/addtrans/", money.addtrans);
+app.use("/money/gettrans/", money.gettrans);
 /*
  * Start it up
  */

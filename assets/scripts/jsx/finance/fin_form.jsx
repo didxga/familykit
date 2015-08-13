@@ -35,7 +35,6 @@ var FinForm = React.createClass(
             return styles;
         },
         _handleSubmit: function(event) {
-            event.preventDefault();
             var moneyTransaction = {
                 type:this.state.selectValue,
                 amount:this.refs.amount.getValue(),

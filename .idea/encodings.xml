@@ -2,10 +2,10 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Gruntfile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/README.md" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/assets/scripts/jsx/app-router.jsx" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/assets/scripts/jsx/app.jsx" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/assets/scripts/jsx/container.jsx" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_action.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_form.jsx" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_main.jsx" charset="UTF-8" />

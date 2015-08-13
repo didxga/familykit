@@ -28,7 +28,7 @@ module.exports = function (grunt) {
                 livereload: true
             },
             react: {
-                files: ['assets/scripts/**/*.jsx'],
+                files: ['assets/scripts/**/*.jsx', 'assets/scripts/**/*.js'],
                 tasks: ['browserify']
             },
             scripts: {

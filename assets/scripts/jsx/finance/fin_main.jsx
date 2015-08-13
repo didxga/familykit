@@ -10,6 +10,7 @@ var React = require("react"),
     Table = mui.Table,
     AppBar = mui.AppBar,
     FlatButton = mui.FlatButton,
+    FinActions = require('./fin_action.js'),
     Dialog = mui.Dialog;
 
 var FinMain = React.createClass(
@@ -25,15 +26,22 @@ var FinMain = React.createClass(
                     canSelectAll: true,
                     deselectOnClickaway: true,
                     height: '300px',
-                    rowData: [
-                        {type: {content: 'Deposit'}, amount: {content: 'Elizabeth Stevenson'}, remark: {content: 'Employed'}},
-                        {type: {content: 'Deposit'}, amount: {content: 'Zachary Dobb'}, remark: {content: 'Employed'}},
-                        {type: {content: 'Deposit'}, amount: {content: 'Zachary Dobb'}, remark: {content: 'Employed'}}
-                    ]
+                    rowData:this._initFinForm()
             };
+        },
+        _initFinForm: function() {
+            FinActions.getTransfer();
+            return [
+                {type: {content: 'Deposit'}, amount: {content: 'Elizabeth Stevenson'}, remark: {content: 'Employed'}},
+                {type: {content: 'Deposit'}, amount: {content: 'Zachary Dobb'}, remark: {content: 'Employed'}},
+                {type: {content: 'Deposit'}, amount: {content: 'Zachary Dobb'}, remark: {content: 'Employed'}}
+            ];
         },
         _onRowSelection: function() {
 
+        },
+        _onAddTran: function() {
+            this.refs.transform._handleSubmit();
         },
         _onAppBarButtonTouch: function() {
             alert("tap")
@@ -68,6 +76,7 @@ var FinMain = React.createClass(
                 <FlatButton
                     key={2}
                     label="Submit"
+                    onClick={this._onAddTran}
                     primary={true}
                      />
             ];
@@ -104,7 +113,7 @@ var FinMain = React.createClass(
                         title="Add new"
                         actions={customActions}
                         modal={this.state.modal}>
-                        <FinForm />.
+                        <FinForm ref="transform"/>.
                     </Dialog>
                 </div>
             );

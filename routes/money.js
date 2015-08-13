@@ -14,3 +14,10 @@ exports.addtrans=function(request, response){
     });
     response.render('index');
 };
+
+exports.gettrans=function(request, response){
+    models.MoneyTrans.findAll().then(function(transList) {
+        console.log(transList);
+        response.render({trans:transList});
+    });
+};
