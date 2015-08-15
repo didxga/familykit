@@ -16,6 +16,7 @@ var React = require("react"),
 var FinMain = React.createClass(
     {
         getInitialState() {
+            this._initFinForm();
             return {
                     fixedHeader: true,
                     fixedFooter: true,
@@ -26,16 +27,18 @@ var FinMain = React.createClass(
                     canSelectAll: true,
                     deselectOnClickaway: true,
                     height: '300px',
-                    rowData:this._initFinForm()
+                    rowData:[]
             };
         },
         _initFinForm: function() {
-            FinActions.getTransfer();
-            return [
-                {type: {content: 'Deposit'}, amount: {content: 'Elizabeth Stevenson'}, remark: {content: 'Employed'}},
-                {type: {content: 'Deposit'}, amount: {content: 'Zachary Dobb'}, remark: {content: 'Employed'}},
-                {type: {content: 'Deposit'}, amount: {content: 'Zachary Dobb'}, remark: {content: 'Employed'}}
-            ];
+            var that = this;
+            FinActions.getTransfer(function(trans) {
+                var re = [];
+                trans.forEach(function(item, index, array){
+                    re.push({type: {content: item.type}, amount: {content: item.amount}, remark: {content: item.remark}});
+                });
+                that.setState({rowData:re});
+            });
         },
         _onRowSelection: function() {
 

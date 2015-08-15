@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cd2e335-d189-4268-a686-40efe2f1562b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/js/familykit.js" afterPath="$PROJECT_DIR$/assets/scripts/js/familykit.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_action.js" afterPath="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_action.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_form.jsx" afterPath="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_form.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_main.jsx" afterPath="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_main.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/money.js" afterPath="$PROJECT_DIR$/routes/money.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -34,18 +30,27 @@
       <file leaf-file-name="fin_form.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_form.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.362069">
-              <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+              <folding>
+                <marker date="1439481455698" expanded="true" signature="1665:3067" placeholder="&lt;xml/&gt;" />
+                <marker date="1439481455698" expanded="true" signature="1741:3039" placeholder="&lt;xml/&gt;" />
+                <marker date="1439481455698" expanded="true" signature="1808:2518" placeholder="&lt;xml/&gt;" />
+                <marker date="1439481455698" expanded="true" signature="1881:2249" placeholder="&lt;xml/&gt;" />
+                <marker date="1439481455698" expanded="true" signature="2270:2490" placeholder="&lt;xml/&gt;" />
+                <marker date="1439481455698" expanded="true" signature="2539:3011" placeholder="&lt;xml/&gt;" />
+                <marker date="1439481455698" expanded="true" signature="2612:2792" placeholder="&lt;xml/&gt;" />
+                <marker date="1439481455698" expanded="true" signature="2813:2983" placeholder="&lt;xml/&gt;" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fin_main.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fin_main.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_main.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.6264045">
+              <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -64,8 +69,8 @@
       <file leaf-file-name="fin_action.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_action.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.5344827">
-              <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -75,19 +80,16 @@
         <entry file="file://$PROJECT_DIR$/assets/scripts/js/familykit.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="96" column="2" selection-start-line="96" selection-start-column="2" selection-end-line="96" selection-end-column="2" />
+              <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding>
-                <marker date="1439481469943" expanded="true" signature="443:1397349" placeholder="{...}" />
-                <marker date="1439481469943" expanded="true" signature="2899:4091" placeholder="[...]" />
-                <marker date="1439481469943" expanded="true" signature="2932:4058" placeholder="{...}" />
-                <marker date="1439481469943" expanded="true" signature="3055:3194" placeholder="[...]" />
-                <marker date="1439481469943" expanded="true" signature="4094:7571" placeholder="[...]" />
-                <marker date="1439481469943" expanded="true" signature="4127:7499" placeholder="{...}" />
-                <marker date="1439481469943" expanded="true" signature="4462:7466" placeholder="{&quot;displayName&quot;: &quot;FinForm&quot;...}" />
-                <marker date="1439481469943" expanded="true" signature="5150:5417" placeholder="{...}" />
-                <marker date="1439481469943" expanded="true" signature="7574:12768" placeholder="[...]" />
-                <marker date="1439481469943" expanded="true" signature="7607:12677" placeholder="{...}" />
-                <marker date="1439481469943" expanded="true" signature="8101:12644" placeholder="{&quot;displayName&quot;: &quot;FinMain&quot;...}" />
+                <marker date="1439613817937" expanded="true" signature="443:1397399" placeholder="{...}" />
+                <marker date="1439613817937" expanded="true" signature="2899:3594" placeholder="[...]" />
+                <marker date="1439613817937" expanded="true" signature="2932:3594" placeholder="{...}" />
+                <marker date="1439613817937" expanded="true" signature="3055:3194" placeholder="[...]" />
+                <marker date="1439613817937" expanded="true" signature="9110:9122" placeholder="{...}" />
+                <marker date="1439613817937" expanded="true" signature="9110:12694" placeholder="{&quot;displayName&quot;: &quot;FinMain&quot;...}" />
+                <marker date="1439613817937" expanded="true" signature="9110:12727" placeholder="{...}" />
+                <marker date="1439613817937" expanded="true" signature="9110:12818" placeholder="[...]" />
               </folding>
             </state>
           </provider>
@@ -103,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="money.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="money.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/money.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6808874">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#0#44#0" expanded="false" />
               </folding>
@@ -130,16 +132,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="5" column="18" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flat-button.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/material-ui/lib/flat-button.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -176,11 +168,11 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/views/layouts/main.handlebars" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_action.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/routes/money.js" />
-        <option value="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_main.jsx" />
         <option value="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_form.jsx" />
+        <option value="$PROJECT_DIR$/routes/money.js" />
+        <option value="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_action.js" />
+        <option value="$PROJECT_DIR$/assets/scripts/jsx/finance/fin_main.jsx" />
       </list>
     </option>
   </component>
@@ -247,6 +239,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -262,6 +256,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="familykit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="familykit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -375,8 +383,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -487,12 +493,21 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19568452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -500,9 +515,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38599348" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3110749" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2801303" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2801303" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28990227" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33224756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -530,18 +545,8 @@
           <line>8</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/money.js</url>
-          <line>18</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/money.js</url>
-          <line>19</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="16" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -564,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="18" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -593,10 +597,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <marker date="1437822905941" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
-            <marker date="1437822905941" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -625,7 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="18" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,10 +654,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1437822905941" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
-            <marker date="1437822905941" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -686,7 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -715,10 +711,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1437822905941" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
-            <marker date="1437822905941" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -778,13 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_table.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-flexbox/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -810,9 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding>
-            <marker date="1437822905896" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -820,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,10 +810,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="21" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="21" />
-          <folding>
-            <marker date="1437822905941" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
-            <marker date="1437822905941" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -850,7 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -858,7 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -897,28 +874,17 @@
     <entry file="file://$PROJECT_DIR$/assets/scripts/js/familykit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="2" selection-start-line="96" selection-start-column="2" selection-end-line="96" selection-end-column="2" />
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding>
-            <marker date="1439481469943" expanded="true" signature="443:1397349" placeholder="{...}" />
-            <marker date="1439481469943" expanded="true" signature="2899:4091" placeholder="[...]" />
-            <marker date="1439481469943" expanded="true" signature="2932:4058" placeholder="{...}" />
-            <marker date="1439481469943" expanded="true" signature="3055:3194" placeholder="[...]" />
-            <marker date="1439481469943" expanded="true" signature="4094:7571" placeholder="[...]" />
-            <marker date="1439481469943" expanded="true" signature="4127:7499" placeholder="{...}" />
-            <marker date="1439481469943" expanded="true" signature="4462:7466" placeholder="{&quot;displayName&quot;: &quot;FinForm&quot;...}" />
-            <marker date="1439481469943" expanded="true" signature="5150:5417" placeholder="{...}" />
-            <marker date="1439481469943" expanded="true" signature="7574:12768" placeholder="[...]" />
-            <marker date="1439481469943" expanded="true" signature="7607:12677" placeholder="{...}" />
-            <marker date="1439481469943" expanded="true" signature="8101:12644" placeholder="{&quot;displayName&quot;: &quot;FinMain&quot;...}" />
+            <marker date="1439613817937" expanded="true" signature="443:1397399" placeholder="{...}" />
+            <marker date="1439613817937" expanded="true" signature="2899:3594" placeholder="[...]" />
+            <marker date="1439613817937" expanded="true" signature="2932:3594" placeholder="{...}" />
+            <marker date="1439613817937" expanded="true" signature="3055:3194" placeholder="[...]" />
+            <marker date="1439613817937" expanded="true" signature="9110:9122" placeholder="{...}" />
+            <marker date="1439613817937" expanded="true" signature="9110:12694" placeholder="{&quot;displayName&quot;: &quot;FinMain&quot;...}" />
+            <marker date="1439613817937" expanded="true" signature="9110:12727" placeholder="{...}" />
+            <marker date="1439613817937" expanded="true" signature="9110:12818" placeholder="[...]" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_action.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5344827">
-          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,29 +896,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_main.jsx">
+    <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_table.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_form.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.362069">
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+          <folding>
+            <marker date="1439481455698" expanded="true" signature="1665:3067" placeholder="&lt;xml/&gt;" />
+            <marker date="1439481455698" expanded="true" signature="1741:3039" placeholder="&lt;xml/&gt;" />
+            <marker date="1439481455698" expanded="true" signature="1808:2518" placeholder="&lt;xml/&gt;" />
+            <marker date="1439481455698" expanded="true" signature="1881:2249" placeholder="&lt;xml/&gt;" />
+            <marker date="1439481455698" expanded="true" signature="2270:2490" placeholder="&lt;xml/&gt;" />
+            <marker date="1439481455698" expanded="true" signature="2539:3011" placeholder="&lt;xml/&gt;" />
+            <marker date="1439481455698" expanded="true" signature="2612:2792" placeholder="&lt;xml/&gt;" />
+            <marker date="1439481455698" expanded="true" signature="2813:2983" placeholder="&lt;xml/&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/money.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6808874">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#0#44#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_action.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scripts/jsx/finance/fin_main.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6264045">
+          <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>

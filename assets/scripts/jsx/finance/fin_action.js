@@ -16,9 +16,10 @@ FinAction.transferMoney.preEmit = function (moneytransaction) {
     request.post('/money/addtrans/', {moneytransaction: moneytransaction}, function () {});
 };
 
-FinAction.getTransfer.preEmit = function() {
+FinAction.getTransfer.preEmit = function(cb) {
     request.get("/money/gettrans/", function(response){
-        console.log(response);
+        var result = JSON.parse(response.text);
+        cb(result.trans);
     });
 };
 
